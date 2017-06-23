@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:visibility="visible"
+    p1:background="@android:color/background_light">
+    <VideoView
+        p1:layout_width="wrap_content"
+        p1:layout_height="222.5dp"
+        p1:id="@+id/videoView1"
+        p1:visibility="visible" />
+    <Button
+        p1:text="CAPTURAR"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:height="150dp"
+        p1:width="400dp"
+        p1:layout_marginTop="235dp"
+        p1:id="@+id/Capturar"
+        p1:background="@android:color/black"
+        p1:textSize="65dp"
+        p1:visibility="visible"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginRight="10dp"
+        p1:enabled="true"
+        p1:clickable="true"
+        p1:onClick="@android:string/VideoView_error_title" />
+    <Button
+        p1:text="VOLTAR"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/Voltar"
+        p1:layout_marginTop="395dp"
+        p1:height="150dp"
+        p1:width="180dp"
+        p1:background="@android:color/holo_orange_light"
+        p1:layout_marginLeft="200dp"
+        p1:textSize="35dp"
+        p1:layout_marginRight="10dp"
+        p1:layout_marginBottom="10dp"
+        p1:visibility="visible"
+        p1:textColor="#000000"
+        p1:clickable="true"
+        p1:enabled="true"
+        p1:longClickable="true" />
+    <Button
+        p1:text="REPETIR"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/Repetir"
+        p1:height="150dp"
+        p1:width="180dp"
+        p1:background="@android:color/holo_orange_light"
+        p1:textSize="35dp"
+        p1:layout_marginTop="395dp"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginBottom="10dp"
+        p1:layout_marginRight="10dp"
+        p1:visibility="visible"
+        p1:textColor="#000000" />
+</RelativeLayout>
