@@ -16,13 +16,13 @@
         p1:layout_marginBottom="325dp"
         p1:visibility="visible" />
     <Button
-        p1:text="CAPTURAR"
+        p1:text="CÂMERA"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:height="150dp"
         p1:width="400dp"
         p1:layout_marginTop="235dp"
-        p1:id="@+id/Capturar"
+        p1:id="@+id/Camera"
         p1:background="@android:color/black"
         p1:textSize="65dp"
         p1:visibility="visible"
@@ -32,10 +32,10 @@
         p1:clickable="true"
         p1:onClick="@android:string/VideoView_error_title" />
     <Button
-        p1:text="VOLTAR"
+        p1:text="FECHAR"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
-        p1:id="@+id/Voltar"
+        p1:id="@+id/Fechar"
         p1:layout_marginTop="395dp"
         p1:height="150dp"
         p1:width="180dp"
