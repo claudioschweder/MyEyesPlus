@@ -16,7 +16,7 @@
         p1:layout_marginBottom="325dp"
         p1:visibility="visible" />
     <Button
-        p1:text="CÂMERA"
+        p1:text="CAMERA"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:height="150dp"
