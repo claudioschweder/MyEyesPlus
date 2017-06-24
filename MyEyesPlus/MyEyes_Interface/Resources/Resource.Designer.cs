@@ -63,6 +63,9 @@ namespace MyEyes
 			// aapt resource value: 0x7f050002
 			public const int Capturar = 2131034114;
 			
+			// aapt resource value: 0x7f050001
+			public const int ImageCamera = 2131034113;
+			
 			// aapt resource value: 0x7f050004
 			public const int Repetir = 2131034116;
 			
@@ -71,9 +74,6 @@ namespace MyEyes
 			
 			// aapt resource value: 0x7f050000
 			public const int relativeLayout1 = 2131034112;
-			
-			// aapt resource value: 0x7f050001
-			public const int videoView1 = 2131034113;
 			
 			static Id()
 			{
@@ -106,6 +106,9 @@ namespace MyEyes
 			
 			// aapt resource value: 0x7f040000
 			public const int ApplicationName = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int openCamera = 2130968577;
 			
 			static String()
 			{

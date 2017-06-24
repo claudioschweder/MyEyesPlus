@@ -1,6 +1,11 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
+using Android.Graphics;
+using Xamarin.Android;
+using Android.Provider;
+using Android.Runtime;
 
 namespace MyEyes
 {
@@ -12,7 +17,17 @@ namespace MyEyes
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
 
-            IniciarCamera();
+            /*public void IniciarCamera() {
+                Intent intent = new Intent(MediaStore.ActionImageCapture);
+                StartActivityForResult(intent, 0);
+            }
+
+            protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+            {
+                base.OnActivityResult(requestCode, resultCode, data);
+                global::Android.Graphics.Bitmap bitmap = (Bitmap)data.Extras.Get("data");
+                imgView1.SetImageBitmap(bitmap);
+            }*/
 
             // Criação de botões
             Button BtnCapturar = FindViewById<Button>(Resource.Id.Capturar);
@@ -23,11 +38,6 @@ namespace MyEyes
             BtnCapturar.Click += delegate { Capturar(); };
             BtnRepetir.Click += delegate { Repetir(); };
             BtnVoltar.Click += delegate { Voltar(); };
-        }
-
-        public void IniciarCamera() {
-            // Intent intent = new Intent(MediaStore.ActionImageCapture);
-            // StartActivityForResult(intent, 0);
         }
 
         public void Capturar()
@@ -51,23 +61,6 @@ namespace MyEyes
 
         }
 
-        Intent it = new Intent(getApplicationContext(), ActivityMain);
-        it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        it.putExtra("SAIR", true);
-        startActivity(it);
-
-        //no onResume da ActivityMain você coloca o seguinte
-
-        @Override
-        protected void onResume()
-        {
-            if (getIntent().getBooleanExtra("SAIR", false))
-            {
-                finish();
-            }
-            super.onResume();
-        }
-
         public void Voltar()
         {
             //define o alerta para executar a tarefa
@@ -78,7 +71,7 @@ namespace MyEyes
             //define o botão positivo
             alerta.SetPositiveButton("Ok", (senderAlert, args) =>
             {
-                this.finish();
+                Finish();
             });
             //define o botão negativo
             alerta.SetNegativeButton("Cancelar", (senderAlert, args) =>

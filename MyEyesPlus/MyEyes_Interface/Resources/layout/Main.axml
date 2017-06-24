@@ -5,10 +5,15 @@
     p1:id="@+id/relativeLayout1"
     p1:visibility="visible"
     p1:background="@android:color/background_light">
-    <VideoView
-        p1:layout_width="wrap_content"
-        p1:layout_height="222.5dp"
-        p1:id="@+id/videoView1"
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:layout_width="382.0dp"
+        p1:layout_height="229.0dp"
+        p1:id="@+id/ImageCamera"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginRight="10dp"
+        p1:layout_marginBottom="325dp"
         p1:visibility="visible" />
     <Button
         p1:text="CAPTURAR"
