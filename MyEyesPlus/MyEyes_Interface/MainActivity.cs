@@ -51,21 +51,14 @@ namespace MyEyes
 
         }
 
-        Intent it = new Intent(getApplicationContext(), ActivityMain);
-        it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        it.putExtra("SAIR", true);
-        startActivity(it);
 
-        //no onResume da ActivityMain você coloca o seguinte
-
-        @Override
         protected void onResume()
         {
-            if (getIntent().getBooleanExtra("SAIR", false))
+           /* if (getIntent().getBooleanExtra("SAIR", false))
             {
                 finish();
             }
-            super.onResume();
+            super.onResume();*/
         }
 
         public void Voltar()
@@ -78,7 +71,7 @@ namespace MyEyes
             //define o botão positivo
             alerta.SetPositiveButton("Ok", (senderAlert, args) =>
             {
-                this.finish();
+                //this.finish();
             });
             //define o botão negativo
             alerta.SetNegativeButton("Cancelar", (senderAlert, args) =>
